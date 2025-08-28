@@ -1,0 +1,382 @@
+/* General Styles */
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #1e9a4e;
+    --background-color: #f0f2f5;
+    --text-color: #333;
+    --card-bg: #fff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navbar */
+.header-container {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+     color: rgb(7, 122, 30);
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-icon-pill {
+    display: flex;
+    align-items: center;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    justify-content: center;
+}
+
+.nav-copy-pill {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #1db71d;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+}
+
+.heart-icon-nav {
+    color: #ff4d4f;
+}
+
+.coin-icon-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+     background: linear-gradient(135deg, #2a6741,#27613c );
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gov-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+    padding: 25px 0;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.heart-icon {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.heart-icon.favorited {
+    color: #ff4d4f;
+}
+
+/* Card Body */
+.card-body h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body p {
+    margin: 0 0 10px;
+    color: #777;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hotline-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.category-badge {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.copy-btn,
+.call-btn {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.copy-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.copy-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.call-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.call-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Call History Section */
+.call-history-section {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--card-shadow);
+    width: 280px;
+    height: fit-content;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.history-header h3 {
+    margin: 0;
+}
+
+.clear-history-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.clear-history-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.history-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.history-item .service-name {
+    font-weight: bold;
+}
+
+.history-item .call-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablets and smaller devices (up to 992px) */
+@media (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Stack content into a single column */
+    }
+
+    .call-history-section {
+        margin-top: 20px;
+        width: auto; /* Allow call history to take full width */
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
+    }
+}
+
+/* Small tablets and large smartphones (up to 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .nav-left, .nav-right {
+        gap: 5px;
+    }
+    .nav-icon-pill, .nav-copy-pill {
+        padding: 8px 12px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr; /* Show 1 card per row */
+    }
+}
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-icon-pill,
+    .nav-copy-pill {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .hero-section {
+        padding: 30px 15px;
+    }
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .hero-section p {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-body h4 {
+        font-size: 1.1rem;
+    }
+
+    .hotline-number {
+        font-size: 1.8rem;
+    }
+
+    .card-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .copy-btn,
+    .call-btn {
+        width: 100%;
+    }
+}
